@@ -32,6 +32,19 @@ func goarray() {
 
 	matrix := [...][]int{{8, 5, 3}, {3, 4, 6}, {9, 8, 7}}
 	fmt.Println("2'D Array ", matrix, len(matrix))
+
+	// sorting
+	strs := []string{"c", "a", "b"}
+	sort.Strings(strs)
+	fmt.Println("Strings:", strs)
+
+	ints := []int{7, 2, 4}
+	sort.Ints(ints)
+	fmt.Println("Ints:   ", ints)
+
+	s := sort.IntsAreSorted(ints)
+	fmt.Println("Sorted: ", s)
+
 }
 
 func gomap() {
