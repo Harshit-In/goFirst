@@ -12,7 +12,8 @@ func main() {
 	// goarray()
 	// gomap()
 	// createStruct()
-	loopInGo()
+	// loopInGo()
+	goPointer()
 }
 
 func hello(name string) {
@@ -130,10 +131,23 @@ func declarationVal() {
 }
 
 func loopInGo() {
-
 	for i := 0; i < 5; i++ {
-		fmt.Printf("\n*****")
+		if i%2 == 0 {
+			fmt.Printf("\n %v is Even Number", i)
+
+		} else {
+			fmt.Printf("\n %v is Odd Number", i)
+
+		}
 	}
+}
+
+func goPointer() {
+	var x int = 90
+	var b *int = &x
+	fmt.Println(x)
+	fmt.Println(b, *b)
+
 }
 
 // import (
